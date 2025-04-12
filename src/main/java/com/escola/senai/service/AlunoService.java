@@ -28,7 +28,7 @@ public class AlunoService {
         return alunoRepository.findById(id);
     }
 
-    // Atualizar um novo aluno
+    // Atualizar aluno
     public Aluno atualizarAluno(Long id , Aluno alunoAtualizado) {
         return alunoRepository.findById(id)
                 .map(aluno -> {
